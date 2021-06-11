@@ -9,5 +9,6 @@ jobs:
       if: github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'frontend'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_PROJECT_URL: https://github.com/botigerstance/options/projects/3
+        GITHUB_PROJECT_URL: https://github.com/nanukn/SS_Angular_App/projects/1
         GITHUB_PROJECT_COLUMN_NAME: backlog
+        

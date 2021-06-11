@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: add-new-issues-to-repository-based-project-column
       uses: docker://takanabe/github-actions-automate-projects:v0.0.1
-      if: github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'frontend'
+      if: github.event_name == 'issues' && github.event.action == 'labeled'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_PROJECT_URL: https://github.com/nanukn/SS_Angular_App/projects/1
